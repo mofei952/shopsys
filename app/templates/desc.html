@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="挑好单" />
+    <meta name="keywords" content="挑好单" />
+    <title>挑好单</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/css.css">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--templet start-->
+    <div class="layer " id="templet-layer">
+        <div id="diy-mod">
+            <div class="mod-left">
+                <div class="mod-eg mod-item">
+                    <div class="mod-msg"><span>模板使用说明</span></div>
+                    <p>模板： 原价<b>#原价#</b>元，领券<b>#券金额#</b>元，只要<b>#券后价#</b>啦</p>
+                    <p>效果： 原价<b><i>249</i></b>元，领券<b><i>50</i></b>元，只要<b><i>199</i></b>啦</p>
+                </div>
+                <div class="mod-normal mod-item">
+                    <div class="mod-msg"><span>通用标签</span></div>
+                    <ul>
+                        <li>
+                            <span class="mod_tag">#标题#</span>
+                            <span class="mod_main">商品短标题</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#券后价#</span>
+                            <span class="mod_main">商品用券后价格</span>
+                            <span class="mod_eg">如 199</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#原价#</span>
+                            <span class="mod_main">商品原价</span>
+                            <span class="mod_eg">如 249</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#券金额#</span>
+                            <span class="mod_main">优惠券金额</span>
+                            <span class="mod_eg">如 50</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#商品链接#</span>
+                            <span class="mod_main">商品的购买链接地址</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#领券链接#</span>
+                            <span class="mod_main">领取优惠券链接地址</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#销量#</span>
+                            <span class="mod_main">当前的累积销售总量</span>
+                            <span class="mod_eg">如 1619</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#文案#</span>
+                            <span class="mod_main">商品的介绍推广文案</span>
+                        </li>
+                        <li>
+                            <span class="mod_tag">#视频#</span>
+                            <span class="mod_main" style="width: 240px; ">商品视频播放地址，没有则不提示</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="attention">
+                    <p>*如您未操作，将无法输出对应的信息<a target="_Blank" class="trans-help-qq" href="" target="_blank">还没看懂？查看教程&gt;&gt;</a></p>
+                </div>
+            </div>
+            <div class="mod-right">
+                <div class="mod-set-center">
+                    <div class="mod-choice">
+                         <span class="mod-qq cur">促销模板</span>
+                        <span class="mod-wechat"> 实拍模板</span>
+                    </div>
+                    <div class="mod-main">
+                        <textarea class="mod-qq-main">今日推荐：#标题# 领#券金额#元独家券，券后【#券后价#元】包邮秒杀！ 【推荐理由】#文案# 查看商品：复制这条信息#微信淘口令#，打开☞手机淘宝☜即可查看并下单！
+                        </textarea>
+                        <textarea class="mod-wechat-main hide"> #标题# 券后【#券后价#元】包邮秒杀 领券下单链接#QQ二合一# #文案# 本群专享优惠！已抢#销量#件！
+                        </textarea>
+                    </div>
+                </div>
+                <button class="modSetBtn">保存</button>
+                <div class="mod-bot-btn">
+                    <span class="bot-btn reset"><i></i>恢复系统模板</span>
+                    <span class="bot-btn discard-changes"><i></i>放弃修改</span>
+                </div>
+            </div>
+        </div>
+        <div class="layui-layer-setwin"></div>
+    </div>
+    <!--templet end-->
+    <!--layer start-->
+    <div class="layer" id="error-layer">
+        <div class="Myicon Close"></div>
+        <div class="title">感谢您对商品进行纠错</div>
+        <h2 class="tishi">您的反馈对挑好单商品质量的提升有极大帮助，让我们共同努力，打造高品质全网精品数据！</h2>
+        <form action="">
+            <ul class="error-list">
+                <li>
+                    <p class=" error-page">纠错商品：</p>
+                    <div class="right-box">
+                        <span class="name fr">九阳K-15F626电热水壶家用烧水家用...</span>
+                    </div>
+                </li>
+                <li>
+                    <p class=" error-page ">纠错类型：</p>
+                    <div class="right-box">
+                        <select name="" id="">
+                            <option value="">价格不对/优惠券异常</option>
+                            <option value="">价格不对/优惠券异常</option>
+                            <option value="">价格不对/优惠券异常</option>
+                            <option value="">价格不对/优惠券异常</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class=" error-page text-error-page">详细说明：</p>
+                    <div class="right-box">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="优惠券失效？佣金有误？我们会第一时间处理并反馈结果。"></textarea>
+                    </div>
+                </li>
+                <li>
+                    <p class=" error-page">联系邮箱：</p>
+                    <div class="right-box">
+                        <input type="text" placeholder="我们怎么联系您？">
+                    </div>
+                </li>
+            </ul>
+            <button class="sub-btn gradual">提交反馈</button>
+        </form>
+    </div>
+    <div class="layer-bg" id="layer-bg"></div>
+    <!--layer end-->
+    <!--float start-->
+    <div class="float">
+        <ul>
+            <li class="custom"><i class="Myicon"></i><a target="_Blank" href="javascript:;">客服中心</a></li>
+            <li class="advice"><i class="Myicon"></i><a target="_Blank" href="javascript:;">意见反馈</a></li>
+            <li id="Backtop" class="backtop"><i class="Myicon"></i><a target="_Blank" href="javascript:;">返回顶部</a></li>
+        </ul>
+    </div>
+    <!--float end-->
+    <!--header start-->
+    <header>
+        <div class="head-top wrap clearfix">
+            <div class="logo fl">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="search-box fl">
+                <input class="search-ipt" type="text" placeholder="关键词/链接/品牌/ID">
+                <button class="search-btn"></button>
+            </div>
+            <div class="text-scroll clearfix">
+                <i class="Myicon "></i>
+                <div class="scroll-box">
+                    <div class="bd">
+                        <ul>
+                            <li><a target="_Blank" href="">促销活动：亚马逊中国 寒假特惠 乐器镇店之宝低至299元</a></li>
+                            <li><a target="_Blank" href="">优惠券码：网易考拉海购 周末狂欢购 家居家装优惠大促全场满399元减200元优惠券</a></li>
+                            <li><a target="_Blank" href="">促销活动：天猫超市 全球生鲜大赏专区满99减50元、领满199-50元优惠券，还有专享满199-60元券</a></li>
+                            <li><a target="_Blank" href="">显卡榜单：1500元以上显卡销量排行榜</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="head-nav">
+            <div class="wrap">
+                <ul class="fl clearfix">
+                    <li><a target="_Blank"  target="_Blank" href="index2.html">首页</a></li>
+                    <li><a target="_Blank"   target="_Blank" href="realtime.html">实时销量榜</a></li>
+                    <li><a target="_Blank"  target="_Blank" href="allday.html">全天销量榜</a></li>
+                    <li ><a target="_Blank"  target="_Blank" href="zero.html">零点过夜单<i class="Myicon"></i></a></li>
+                </ul>
+                <div class="nav-right fr clearfix">
+                    <div class="allow fl">
+                        <i class="Myicon "></i>
+                        <a target="_Blank"  target="_Blank" href="wdsp.html">放单中心</a>
+                    </div>
+                    <div class="head-login fr">
+                        <a target="_Blank" href="">登录</a>
+                        <i></i>
+                        <a target="_Blank" href="">注册</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header end-->
+    <!--content start-->
+    <div class="middle" style="padding-top: 20px">
+        <div class="detail-wrap">
+            <div class="detail-content-l">
+                <div class="detail-content-l-main">
+                    <div class="goods-img">
+                        <div class="goods-big-img"><a target="_Blank" href=""><img src="images/desc_03.jpg" alt=""></a></div>
+                        <div class="goods-small-img">
+                            <ul>
+                                <li class="cur">
+                                    <img src="images/desc_03.jpg" alt="">
+                                    <div class="cover">
+                                        <span>点击预览</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/1.jpg" alt="">
+                                    <div class="cover">
+                                        <span>点击预览</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="goods-tender">
+                        <div class="tender-info">
+                            <div class="info-img"><a target="_Blank" href=""><img src="images/f.png" alt=""></a></div>
+                            <div class="info-main">
+                                <div class="info-name">
+                                    <a target="_Blank" href="">爱心团队</a>
+                                    <span>团队</span>
+                                </div>
+                                <div class="info-time">入驻时长 <b>448</b>天</div>
+                                <div class="info-num">在线商品：<b>112</b> 款</div>
+                            </div>
+                        </div>
+                        <div class="tender-more clearfix">
+                            <span class="his-home"><a target="_Blank" href="yhq.html">Ta的主页</a></span>
+                            <span><a target="_Blank" href="">QQ咨询</a></span>
+                        </div>
+                    </div>
+                    <div class="release-tag">
+                        <span class="release-time"><i></i>发布时间：今天 </span>
+                        <span class="tag-tui"><i></i>我最近一次推广：<a target="_Blank" class="tui-mark" id="tui-mark"  href="javascript:void(0);">未标记</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-content-r">
+                <div class="goods-info">
+                    <div class="goods-tit">
+                        <h1>
+                           
+                            <a target="_Blank" href="">紫薯新鲜现挖地瓜农家紫</a>
+                        </h1>
+                        <p>【2件17元，5斤装】农家种植，无污染，香糯甜，比较小，乡窝头临安小香薯，口感好，纯天然有机绿色食品，吃货福利！</p>
+                        <div class="goods-bug clearfix">
+                            <a target="_Blank" class="fl goods-bug-btn" href="javascript:;"><i></i>商品纠错</a>
+                        </div>
+                    </div>
+                    <div class="price-num-status clearfix">
+                        <div class="new-price fl">
+                            <span style="font-size: 14px;">价格<b style="font-size: 30px; font-weight: bold;"><i style="font-size: 20px;">¥</i>16.9</b></span>
+                        </div>
+                        <div style="margin-left: 5px;" class="sale-num fl">
+                            <span style="font-size: 14px;">销量<b style="font-size: 14px;">2.1万</b></span>
+                        </div>
+                    </div>
+                    <div class="yong-quan-comment">
+                        <div class="yong fl">
+                            <span>佣金<b>21.8%</b></span>
+                            <p>
+                                通用计划
+                            </p>
+                        </div>
+                        <div class="quan fl">
+                            <span>优惠券<b><i>¥</i>3</b></span>
+                            <p>总数10000 <a target="_Blank" href="">（立即领取）</a> </p>
+                        </div>
+                        <div class="comment fr">
+                            <span>评论 <b>0</b> </span>
+                            <p>对商品有疑问<b class="comment commentBtn">（点评）</b></p>
+                        </div>
+                        <div class="bottom-dot"></div>
+                    </div>
+                </div>
+
+                <div class="promote-mod">
+                    <div class="promote-top">
+                        <div class="promote-tit">
+                            <span><i></i>产品介绍</span>
+                        </div>
+                        <div class="promote-more">
+                            <a target="_Blank" href="allday.html">查看更多</a>
+                        </div>
+                    </div>
+                    <div class="promote-list pro-list">
+                      <img src=""  alr="">
+                      <p>产品详情介绍</p>
+
+                        <div class="lingquan">
+                            <a target="_Blank" href="">更多领券秒杀，进入领券直播间</a>
+                        </div>
+                    </div>
+                    <dl class="promote-statement">
+                        <dt>内容声明：</dt>
+                        <dd>挑好单为互联网信息服务提供者，挑好单（含网站、衍生客户端等）所展示的商品的标题、价格、详情等信息内容系由商品所属天猫/淘宝店铺提供、平台注册淘客发布，其真实性、准确性和合法性均由发布商品的淘客负责。挑好单提醒淘客在推广商品前注意谨慎核实。挑好单存在海量商品信息，如发现商品中有任何违法/违规信息，请立即向挑好单举报并提供有效线索。<a target="_Blank" class="report" id="report" href="javascript:;">立即举报</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--content end-->
+    <!--footer start-->
+    <footer>
+        <p>CopyRight 2018-2019 www.tiaohaodan.com 挑好单 - 浙ICP备15017427号-1</p>
+    </footer>
+    <!--footer end-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js "></script>
+    <script src="js/jquery.lazyload.js "></script>
+    <script src="js/base.js"></script>
+    <script>
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        threshold: 1000
+    });
+    //头部广告
+    jQuery(".scroll-box").slide({ mainCell: ".bd ul", autoPlay: true, effect: "topMarquee", vis: 1, interTime: 100, trigger: "click" });
+
+    $(".goods-small-img ul li").mouseenter(function(event) {
+        $(this).addClass('cur').siblings('').removeClass('cur');
+        var pic = $(this).find("img").attr("src");
+        $(".goods-big-img img").attr("src", pic);
+     
+    });
+
+    $(".goods-small-img ul li").click(function() {
+        var marketing = $(".marketing-mod").offset().top - 100;
+        $('html,body').animate({ scrollTop: marketing }, 500);
+    })
+
+
+    //左侧浮动
+    $(window).load(leftImgfixed);
+
+
+    //纠错弹窗
+    $(".goods-bug-btn,.report").click(function(event) {
+        openlayer("layer-bg", "error-layer");
+        return false;
+    });
+    $(".layer .Close").click(function(event) {
+        closelayer("layer-bg", "error-layer");
+        return false;
+    });
+
+    //自定义模板弹窗
+    $(".zdy_mb").click(function(event) {
+        openlayer("layer-bg", "templet-layer");
+        return false;
+    });
+    $(".layer .discard-changes,.layui-layer-setwin").click(function(event) {
+        closelayer("layer-bg", "templet-layer");
+        return false;
+    });
+    $(".mod-choice span").click(function(){
+        $(this).addClass("cur").siblings().removeClass("cur");
+        var i=$(this).index();
+        $(".mod-main textarea").eq(i).addClass("hide").siblings().removeClass("hide");
+       
+         $(".mod-high ul").eq(i).addClass("hide").siblings().removeClass("hide");
+    })
+    </script>
+</body>
+
+</html>

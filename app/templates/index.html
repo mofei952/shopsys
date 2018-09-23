@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="挑好单" />
+    <meta name="keywords" content="挑好单" />
+    <title>挑好单</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/html5.js') }}"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--login start-->
+    <div class="layer " id="login-layer">
+        <div class="z-popup-head ">
+            <img id="login-close" src="{{ url_for('static', filename='images/login-close.png') }}" alt="">
+        </div>
+        <div class="geetest_wrap">
+            <ul class="login-tab">
+                <li class=""> <a target="_Blank" href="javascript:;">登录</a> </li>
+                <li> <a target="_Blank" href="javascript:;">注册</a> </li>
+            </ul>
+            <div class="login-cons">
+                <form action="">
+                    <div class="form-item">
+                        <div class="item-tip">手机号/邮箱</div>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="form-item">
+                        <div class="item-tip">密码</div>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="twoWeeks clearfix">
+                        <div class="loginR fr">
+                            <input type="checkbox" class="ckeckBox">
+                            <label for="rememberme">记住我</label>
+                            <span class="cb-line">|</span>
+                            <a target="_Blank" href="">忘记密码</a>
+                        </div>
+                    </div>
+                    <button class="login-btn gradual">登录</button>
+                </form>
+                <form style="display: none" action="">
+                    <div class="form-item">
+                        <div class="item-tip">手机号</div>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="captchaBox form-item clearfix">
+                        <div class="form-item fl">
+                            <div class="item-tip">输入验证码</div>
+                            <input type="text" class="form-input">
+                        </div>
+                        <button class="btn-captcha">发送短信验证码</button>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-tip">密码</div>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="twoWeeks clearfix">
+                        <div class="loginL fl">
+                            <input type="checkbox" id="agreement" checked="checked" class="ckeckBox" tabindex="6">
+                            <label for="agreement">同意商城<a target="_Blank" href="" class="a_underline" target="_blank">《用户协议》</a></label>
+                        </div>
+                    </div>
+                    <button class="login-btn gradual">注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="layer-bg" id="layer-bg"></div>
+    <!--login end-->
+    <!--float start-->
+    <div class="float">
+        <ul>
+            <li class="custom"><i class="Myicon"></i><a target="_Blank" href="javascript:;">客服中心</a></li>
+            <li class="advice"><i class="Myicon"></i><a target="_Blank" href="advice.html">意见反馈</a></li>
+            <li id="Backtop" class="backtop"><i class="Myicon"></i><a target="_Blank" href="javascript:;">返回顶部</a></li>
+        </ul>
+    </div>
+    <!--float end-->
+    <!--header start-->
+    <header>
+        <div class="head-top wrap clearfix">
+            <div class="logo fl">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+            </div>
+            <div class="search-box fl">
+                <input class="search-ipt" type="text" placeholder="关键词/链接/品牌/ID">
+                <button class="search-btn"></button>
+            </div>
+            <div class="text-scroll clearfix">
+                <i class="Myicon "></i>
+                <div class="scroll-box">
+                    <div class="bd">
+                        <ul>
+                            <li><a target="_Blank" href="">促销活动：亚马逊中国 寒假特惠 乐器镇店之宝低至299元</a></li>
+                            <li><a target="_Blank" href="">优惠券码：网易考拉海购 周末狂欢购 家居家装优惠大促全场满399元减200元优惠券</a></li>
+                            <li><a target="_Blank" href="">促销活动：天猫超市 全球生鲜大赏专区满99减50元、领满199-50元优惠券，还有专享满199-60元券</a></li>
+                            <li><a target="_Blank" href="">显卡榜单：1500元以上显卡销量排行榜</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="head-nav">
+            <div class="wrap">
+                <ul class="fl clearfix">
+                    <li class="active"><a target="_Blank" href="index.html">首页</a></li>
+                    <li><a target="_Blank" href="realtime.html">产品分类</a></li>
+                    <li><a target="_Blank" href="zero.html">热门产品<i class="Myicon"></i></a></li>
+                </ul>
+                <div class="nav-right fr clearfix">
+                    <div class="allow fl">
+                        <i class="Myicon "></i>
+                        <a target="_Blank" href="wdsp.html">购物车</a>
+                    </div>
+                    <div class="head-login fr">
+                        <a target="_Blank" id="login" href="">登录</a>
+                        <i></i>
+                        <a target="_Blank" id="reg" href="">注册</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header end-->
+    <!--content start-->
+    <div class="middle">
+        <div class="banner" id="focus">
+            <div class="bd">
+                <ul>
+                    <li><img src="{{ url_for('static', filename='images/banner_02.png') }}" alt=""></li>
+                    <li><img src="{{ url_for('static', filename='images/banner_02.png') }}" alt=""></li>
+                    <li><img src="{{ url_for('static', filename='images/banner_02.png') }}" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="idx-title">
+            <em><b>商品精选</b><span>TiaoHaoDan.com</span></em>
+        </div>
+        <div class="wrap">
+            <div class="pro-list">
+                <ul class="clearfix">
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a target="_Blank" href="desc.html">
+                            <div class="imgbox">
+                                <img src="{{ url_for('static', filename='images/b8.jpg') }}" class="lazy" data-original="{{ url_for('static', filename='images/b8.jpg') }}" alt="">
+                                <div class="now">
+                                    <p>今日</p>
+                                    <p>上新</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="text-box">
+                            <h1 class="name"><a target="_Blank" href="">九阳 K15-F626电热水壶家用烧水</a></h1>
+                            <p class="coupon">商品简介
+                               
+                            </p>
+                        <p class="price clearfix">
+                            <span class="fl"><b style="float: left;">价格：</b><em><font style="float: left;">￥</font> <b style="float: right;">135</b></em></span>
+                            <span class="fr"><a target="_Blank" href="">查看详情</a></span>
+                        </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="page">
+                <ul>
+                    <li>
+                        <a target="_Blank" href="javascript:;">
+                            <</a>
+                    </li>
+                    <li><a target="_Blank" href="javascript:;">1</a></li>
+                    <li class="active"><a target="_Blank" href="javascript:;">2</a></li>
+                    <li><a target="_Blank" href="javascript:;">3</a></li>
+                    <li><a target="_Blank" href="javascript:;">4</a></li>
+                    <li><a target="_Blank" href="javascript:;">5</a></li>
+                    <li><a target="_Blank" href="javascript:;">></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--content end-->
+    <!--footer start-->
+    <footer>
+        <p>CopyRight 2018-2019 www.tiaohaodan.com 挑好单 - 浙ICP备15017427号-1 </p>
+    </footer>
+    <!--footer end-->
+    <script src="{{ url_for('static', filename='js/jquery1.42.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.SuperSlide.2.1.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.lazyload.js') }} "></script>
+    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+    <script>
+    $(".charts-hours-list li").click(function() {
+        $(this).addClass('active').siblings('').removeClass('active');
+    })
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        threshold: 1000
+    });
+    //头部广告
+    jQuery(".scroll-box").slide({ mainCell: ".bd ul", autoPlay: true, effect: "topMarquee", vis: 1, interTime: 100, trigger: "click" });
+    //banner轮播
+    jQuery("#focus").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true })
+
+    //排行榜轮播
+    jQuery("#charts-list").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "leftLoop", autoPlay: true, vis: 1 });
+    </script>
+</body>
+
+</html>

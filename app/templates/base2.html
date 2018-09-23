@@ -1,0 +1,68 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+    {{ super() }}
+    <style>
+        .header {
+            margin: 0 auto;
+            width: 1200px;
+            height: 90px;
+        }
+
+        .nav-container {
+            background: blue;
+        }
+
+        .nav-div {
+            margin: 0 auto;
+            width: 1200px;
+            height: 50px;
+        }
+
+        .nav > li > a {
+            padding: 15px 20px;
+        }
+
+        .nav > li > a:hover {
+            background: cornflowerblue;
+        }
+
+        .logo {
+            width: 100px;
+            height: 90px;
+        }
+
+        .content{
+            margin: 0 auto;
+            width: 1200px;
+        }
+    </style>
+{% endblock %}
+
+{% block navbar %}
+    <div class="header-container">
+        <div class="header">
+            <img class="logo" src="{{ url_for('static', filename='image/logo.png') }}"/>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav-div">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ url_for('.index') }}">首页</a></li>
+                <li><a href="{{ url_for('.index') }}">首页</a></li>
+                <li><a href="{{ url_for('.index') }}">首页</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="content-container">
+        <div class="content">{% block center %}{% endblock %}</div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {#    {{ super() }}#}
+    footer
+{% endblock %}
